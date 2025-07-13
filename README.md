@@ -133,6 +133,12 @@ docker-compose up -d
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
+#### 方式三：手动代理模式
+```bash
+# file: proxy_runner.py
+python proxy_runner.py
+```
+> 此方式专为需要通过代理访问外网的用户设计，会自动检测Clash代理并配置环境变量。
 
 ### 4. 验证服务
 ```bash
@@ -258,6 +264,7 @@ curl -X POST http://localhost:8000/v1/messages \
 ```
 jetbrainsai2api/
 ├── main.py              # 主程序（异步服务器 + API 适配器）
+├── proxy_runner.py      # 代理模式启动脚本
 ├── requirements.txt     # Python 依赖
 ├── Dockerfile          # Docker 构建文件
 ├── docker-compose.yml  # Docker Compose 配置
