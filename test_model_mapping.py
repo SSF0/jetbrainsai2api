@@ -9,7 +9,7 @@ import requests
 from typing import Dict, Any
 
 # Test configurations
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://localhost:8002"
 API_KEY = "sk-your-custom-key-here"
 
 def load_model_mappings():

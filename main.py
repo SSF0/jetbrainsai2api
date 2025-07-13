@@ -1260,4 +1260,4 @@ if __name__ == "__main__":
     print("  POST /v1/messages")
     print("\n在 Authorization header 中使用客户端 API 密钥 (Bearer sk-xxx)")
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8002)
