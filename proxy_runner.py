@@ -71,7 +71,7 @@ def main():
     
     if not proxy_ok:
         print("⚠️  代理测试失败，可能原因:")
-        print("   • Clash节点选择了SOCKS5代理（请切换到HTTP模式）")
+        print("   • Clash本地HTTP代理端口(7890)未正常工作")
         print("   • 代理节点连接异常")
         print("   • 网络连接问题")
         choice = input("\n是否继续启动? (y/N): ").lower().strip()
